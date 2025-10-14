@@ -57,35 +57,35 @@ OR:
 
 - Your unique Tor ID will be displayed - share this with friends to connect.
 ### CLI Commands:
-`#Identity Management
-info                    # Show your ID and name
-change_name            # Update display name
-change_password        # Change account password
+- Identity Management
+`info                    # Show your ID and name`
+`change_name            # Update display name`
+`change_password        # Change account password`
 
-#Friend Management
-add <user_id>          # Send friend request
-friends                # List all friends
-requests               # Show pending requests
-accept <user_id>       # Accept friend request
-decline <user_id>      # Decline friend request
-remove <user_id>       # Remove friend
+- Friend Management
+`add <user_id>          # Send friend request`
+`friends                # List all friends`
+`requests               # Show pending requests`
+`accept <user_id>       # Accept friend request`
+`decline <user_id>      # Decline friend request`
+`remove <user_id>       # Remove friend`
 
-#Messaging
-message <user_id> <text>    # Send message (Signal Protocol)
-msg <user_id> <text>        # Alias for message
+- Messaging
+`message <user_id> <text>    # Send message (Signal Protocol)`
+`msg <user_id> <text>        # Alias for message`
 
-#Network
-start_tor              # Launch Tor service
-status                 # Show system status
-network_status         # Network diagnostics
-config                 # Show Tor configuration
+- Network
+`start_tor              # Launch Tor service`
+`status                 # Show system status`
+`network_status         # Network diagnostics`
+`config                 # Show Tor configuration`
 
-#Advanced
-debug_enable           # Enable debug mode
-backup [directory]     # Create encrypted backup
-export_friend <id>     # Export friend data
-import_friend <file>   # Import friend data
-reset                  # Reset entire system
-````
+- Advanced
+`debug_enable           # Enable debug mode`
+`backup [directory]     # Create encrypted backup`
+`export_friend <id>     # Export friend data`
+`import_friend <file>   # Import friend data`
+`reset                  # Reset entire system`
+
 
 
