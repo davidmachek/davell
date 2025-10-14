@@ -92,5 +92,91 @@ export_friend <id>     # Export friend data
 import_friend <file>   # Import friend data
 reset                  # Reset entire system
 ```
+### GUI Interface
+- The GUI provides an intuitive interface with:
+- **Contact List**: Visual representation of friends with status indicators
+- **Chat Window**: Real-time messaging with Signal Protocol
+- **Friend Requests**: Easy management of incoming/outgoing requests
+- **Settings Menu**: System configuration and security options
+- **Network Status**: Live connection monitoring
 
+- Launch with: `davell -gui`
 
+### Security Features
+#### Cryptographic Protocols
+- **Key Exchange**: Elliptic Curve Diffie-Hellman (ECDH) with SECP384R1
+- **Symmetric Encryption**: AES-256 in GCM mode
+- **Key Derivation**: HKDF with SHA-256
+- **Digital Signatures**: ECDSA with SHA-256
+- **Forward Secrecy**: Signal Protocol Double Ratchet Algorithm
+  
+#### Security Mechanisms
+- **Nonce-Based Replay Protection**: 16-byte cryptographic nonces
+- **Message Authentication**: HMAC-SHA256 for integrity verification
+- **Rate Limiting**: Protection against DoS attacks (100 requests/minute)
+- **Secure Memory Management**: Automatic wiping of sensitive data
+- **Certificate Pinning**: MITM attack prevention
+- **Timestamp Validation**: 5-minute window for message acceptance
+  
+#### Privacy Features
+- **Tor Hidden Services**: Complete IP anonymity
+- **No Metadata Logging**: Zero tracking or analytics
+- **Encrypted Storage**: AES-256-GCM for all local data
+- **Password-Based Encryption**: HKDF with user password
+- **Secure Deletion**: Multi-pass overwrite for file removal
+
+### Architecture
+#### Signal Protocol Implementation
+ - DMS implements the Signal Protocol for end-to-end encryption:
+```
+┌─────────────────────────────────────────┐
+│         Signal Protocol Layer           │
+├─────────────────────────────────────────┤
+│  • Double Ratchet Algorithm             │
+│  • Chain Key Derivation                 │
+│  • Message Key Generation               │
+│  • Out-of-Order Message Handling        │
+└─────────────────────────────────────────┘
+                 ↓
+┌─────────────────────────────────────────┐
+│      Cryptographic Transport Layer      │
+├─────────────────────────────────────────┤
+│  • ECDH Key Exchange (SECP384R1)        │
+│  • AES-256-GCM Encryption               │
+│  • HMAC-SHA256 Authentication           │
+└─────────────────────────────────────────┘
+                 ↓
+┌─────────────────────────────────────────┐
+│         Tor Network Layer               │
+├─────────────────────────────────────────┤
+│  • Onion Routing                        │
+│  • Hidden Service Protocol              │
+│  • Circuit Management                   │
+└─────────────────────────────────────────┘
+```
+#### File Structure
+```
+davell/
+├── Main.py                 # Application entry point
+├── Network.py              # Signal Protocol & networking
+├── CryptoUtils.py          # Cryptographic primitives
+├── Storage.py              # Encrypted storage management
+├── Message.py              # Message formatting
+├── MyID.py                 # Identity management
+├── EncodeID.py             # ID encoding/decoding
+├── Maskot.py               # ASCII art
+└── /usr/share/davell/
+    ├── storage/
+    │   ├── certs/
+    │   │   ├── persistent_cert.pem       # Encrypted identity
+    │   │   └── signal_sessions.enc       # Signal Protocol state
+    │   ├── friends.enc                   # Friend list
+    │   ├── pending_requests.enc          # Pending requests
+    │   └── PersonalInfo.enc              # User profile
+    └── tor/
+        ├── torrc                         # Tor configuration
+        ├── data/                         # Tor data directory
+        └── hiddenService/                # Hidden service keys
+```
+
+### Tor Configuration
