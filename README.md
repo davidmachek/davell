@@ -180,3 +180,51 @@ davell/
 ```
 
 ### Tor Configuration
+```bash
+davell -c 6300
+```
+ - Manual Tor Configuration (Edit: /usr/share/davell/tor/torrc)
+```bash
+SocksPort 9050
+ControlPort 9051
+HiddenServiceDir /usr/share/davell/tor/hiddenService
+HiddenServicePort 6300 127.0.0.1:6300
+```
+### Security Adjust in source code (/usr/local/bin/main.py)
+ - CONNECTION_TIMEOUT = 60        # Connection timeout (seconds)
+ - MAX_MESSAGE_SIZE = 8192        # Maximum message size (bytes)
+ - MAX_CONNECTIONS = 10           # Maximum concurrent connections
+ - RATE_LIMIT_WINDOW = 60         # Rate limit window (seconds)
+ - MAX_REQUESTS_PER_WINDOW = 100  # Max requests per windowSettings
+### Debug Mode
+ - Enable debug logging for troubleshooting:
+
+ #### In CLI
+ ```python
+>> debug_enable
+>> debug_data          # View internal state
+```
+
+ -  Test self-messaging (debug only)
+ ```python
+>> test_self           # Create self friend request
+>> accept <your_id>    # Accept self request
+>> test_message "Hello"  # Send message to yourself
+```
+
+### Network Diagnostic
+```python
+network_status      # Connection status
+status              # System status
+config              # Tor configuration
+```
+
+Security Disclaimer
+While DMS implements robust security measures, no system is perfectly secure. Users should:
+
+Use strong, unique passwords
+Keep software updated
+Verify friend identities through alternate channels
+Report security vulnerabilities responsibly
+Understand that Tor provides anonymity, not encryption (that's our job!)
+
