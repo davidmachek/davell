@@ -18,7 +18,7 @@
  - python3-pyqt5 python3-venv python3-pip python3-dev python3-tk build-essential libssl-dev libffi-dev pkg-config libbz2-dev liblzma-dev zlib1g-dev cargo
 
 ### Installation Guide:
- - [Davell Site Installation](https://davell.org/learn.html#installation-steps)
+ - [COMMING SOON.. Davell Site Installation](https://davell.org/learn.html#installation-steps)
 
 ### Run Davell
 - Start Davell
