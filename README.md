@@ -6,6 +6,27 @@
 ### Key Features
  - End-to-End Encryption: Military-grade encryption using SECP384R1 elliptic curves and AES-256-GCM Signal Protocol Integration: Advanced forward secrecy with Double Ratchet Algorithm Tor Network Integration: Complete anonymity through onion routing Zero Knowledge Architecture: Your data, your keys - we never see your messages Encrypted Storage: All local data encrypted with password-derived keys Dual Interface: Command-line and modern GUI options Security Hardening: Rate limiting, nonce verification, and replay attack prevention
 
+-----------------
+## Reporting Bugs & Contributing
+
+Davell is a **Linux-only** project. If you are using Windows or macOS, it will not work.
+
+### Reporting Bugs
+**When reporting a bug, include:**
+- Linux distribution and version (e.g., Ubuntu 22.04, Arch Linux)
+- Architecture (x86_64, armv7, arm64)
+- Steps to reproduce the bug
+- Expected behavior vs. actual behavior
+- Terminal output or logs (if any)
+- Davell version
+
+### Security Issues
+For **security vulnerabilities**, please do **not** open a public issue. Instead, email us at:  
+**davellbugs@proton.me**
+
+Your reports help make Davell more stable, secure, and reliable. Every bug report is one step closer to perfection.
+-----------------
+
 ### Prerequisites
  - Python: Version 3.7 or higher
  - RAM: Minimum 512MB, recommended 1GB+
