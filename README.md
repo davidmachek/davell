@@ -2,6 +2,7 @@
 
 **Davell Message System (DMS)** is a privacy-first, decentralized messaging platform that combines *end-to-end encryption* with the anonymity of the *Tor network*. Built with security as the foundation, **DMS** implements the *Signal Protocol* for *forward secrecy* and provides a *robust framework* for secure communication.
 
+#### By downloading, installing, copying, forking, or using the Davell Message System (the “Software”), you agree to these Terms of Service (“Terms”). If you do not agree, do not use the Software.
 
 ### Key Features
  - End-to-End Encryption: Military-grade encryption using SECP384R1 elliptic curves and AES-256-GCM Signal Protocol Integration: Advanced forward secrecy with Double Ratchet Algorithm Tor Network Integration: Complete anonymity through onion routing Zero Knowledge Architecture: Your data, your keys - we never see your messages Encrypted Storage: All local data encrypted with password-derived keys Dual Interface: Command-line and modern GUI options Security Hardening: Rate limiting, nonce verification, and replay attack prevention
@@ -249,3 +250,30 @@ Verify friend identities through alternate channels
 Report security vulnerabilities responsibly
 Understand that Tor provides anonymity, not encryption (that's our job!)
 
+-----------------
+## Terms of Service (TOS)
+#### Effective date: 10/16/2025
+#### Introduction / Acceptance of Terms
+  By downloading, installing, copying, forking, using or contributing to the Davell Message System (the “Software”), you agree to these Terms of Service (“Terms”). If you do not agree, do not use the Software.
+#### Eligibility / Compliance with Law
+  You must comply with all applicable laws when using the Software. Use the Software only for lawful purposes. The authors are not responsible for any illegal use of the Software by its users.
+#### Prohibited Uses
+  While the authors cannot monitor usage, you are legally responsible for your actions. Do not use the Software to:
+  - commit or facilitate illegal acts (e.g., drug trade, child abuse, terrorism, fraud);
+  - distribute malware, ransomware, or compromise other systems;
+  - host, transmit, or distribute illegal content.
+#### No Warranty — “AS IS”
+  The Software is provided “AS IS”, without warranties of any kind. The authors, contributors, and maintainers disclaim all express or implied warranties, including merchantability, fitness for a particular purpose, or non-infringement.
+#### Limitation of Liability
+  To the maximum extent permitted by law, the authors, contributors, and maintainers are not liable for any direct, indirect, incidental, special, consequential, punitive, or exemplary damages (including lost profits, loss of data, or business interruption), even if advised of the possibility of such damages.
+#### Indemnification
+  You agree to indemnify and hold harmless the authors, contributors, and maintainers from any claims, damages, liabilities, losses, costs, or expenses arising from your use of the Software in a manner that violates law or these Terms.
+#### Open Source Components and Licenses
+  Third-party open source components included in Davell are subject to their own licenses. You must comply with these licenses when redistributing or using the components.
+#### Decentralized Peer-to-Peer Architecture
+  Davell is fully decentralized. There is no central server and no mechanism to block or monitor user communication. The Software is only a tool for secure, private messaging. The authors cannot control, access, or restrict user activity.
+#### Governing Law
+  These Terms are governed by the laws of the Czech Republic. Any disputes arising under these Terms shall be subject to the exclusive jurisdiction of Czech courts.
+#### Changes to Terms
+  The authors may update these Terms. Continued use of the Software after posting changes indicates acceptance.
+-----------------
