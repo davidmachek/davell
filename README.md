@@ -1,5 +1,5 @@
-# Davell Message System Version 0.4 (BETA)
-
+# Davell Message System Version 0.4 (BETA) 
+![Version](https://img.shields.io/badge/version-0.4-blue) ![License](https://img.shields.io/badge/license-MIT-green)
 **Davell Message System (DMS)** is a privacy-first, decentralized messaging platform that combines *end-to-end encryption* with the anonymity of the *Tor network*. Built with security as the foundation, **DMS** implements the *Signal Protocol* for *forward secrecy* and provides a *robust framework* for secure communication.
 
 #### By downloading, installing, copying, forking, or using the Davell Message System (the “Software”), you agree to these Terms of Service (“Terms”). If you do not agree, do not use the Software.
